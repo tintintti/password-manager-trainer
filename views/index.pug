@@ -7,5 +7,7 @@ block content
     input(type='password', name='password', placeholder='Salasana')
     input(type='password', name='verify_pw', placeholder='Salasana uudelleen')
     button(type='submit') Luo tunnus
+  p Onko sinulla jo tunnus? 
+    a(href='/login') Kirjaudu täällä.
   if error
     p.error #{error}

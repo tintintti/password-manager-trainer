@@ -6,5 +6,7 @@ block content
     input(type='text', placeholder='Käyttäjätunnus', name='username')
     input(type='password', placeholder='Salasana', name='password')
     button(type='submit') Kirjaudu
+  p Eikö sinulla ole tunnusta? 
+    a(href='/') Luo tunnus täällä.
   if error
     p.error #{error}
