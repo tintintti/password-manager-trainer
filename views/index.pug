@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Luo tunnus
+  form(method='POST', action='/')
+    input(type='text', placeholder='Käyttäjätunnus', name='username')
+    input(type='password', name='password', placeholder='Salasana')
+    input(type='password', name='verify_pw', placeholder='Salasana uudelleen')
+    button(type='submit') Luo tunnus
+  if error
+    p.error #{error}

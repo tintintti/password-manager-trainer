@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Kirjaudu
+  form(method='POST', action='/login')
+    input(type='text', placeholder='Käyttäjätunnus', name='username')
+    input(type='password', placeholder='Salasana', name='password')
+    button(type='submit') Kirjaudu
+  if error
+    p.error #{error}
